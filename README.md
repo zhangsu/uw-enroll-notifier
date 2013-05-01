@@ -17,10 +17,10 @@ in the student environment.
 3. Modify courses.yaml for a list of courses of interest
 4. Run this script periodically, e.g., through crontab on one of the machines:
 
-    crontab -e
+        crontab -e
 
   Add a new line to the crontab file which should look like
 
-    * * * * * cd ~/path_to_this_repo; /u4/s68zhang/local/bin/ruby query.rb
+        * * * * * cd ~/path_to_this_repo; /u4/s68zhang/local/bin/ruby query.rb
 
   Which runs every minute.
