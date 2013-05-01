@@ -1,0 +1,9 @@
+---
+# Credentials for the emailbox receiving notifications.
+name:       'Su Zhang'
+email:      'me@zhang.su'
+password:   '1234567890'
+
+smtp:
+  host:     'smtp.gmail.com'
+  port:     587
