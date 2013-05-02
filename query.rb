@@ -13,7 +13,7 @@ recipients = [sender]
 userid = sender
 password = config['password']
 
-smtp = Net::SMTP.new(config['smtp']['host'], config['smtp']['password'])
+smtp = Net::SMTP.new(config['smtp']['host'], config['smtp']['port'])
 smtp.enable_starttls
 
 # Searches any string containing "cancel" and ignores casing. Some sections are
