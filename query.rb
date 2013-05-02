@@ -43,7 +43,7 @@ end
 courses = YAML.load_file('courses.yaml')
 domain = (sender =~ /.+@(.+)/; $1)
 
-smtp.start(domain, userid, password, :login) do |smtp|
+smtp.start(domain, userid, password, :login) do
   open('result.log', 'a') do |log|
     log.puts Time.now
     for course in courses
